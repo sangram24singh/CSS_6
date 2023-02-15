@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>        
+<style>
+    .a1{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 30%;
+        top: 100px;
+        border: 3px solid goldenrod;
+        animation-name: a1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes a1 {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    .a2{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 30%;
+        top: 100px;
+        border: 3px solid brown; 
+        animation-name: a2;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+    }
+@keyframes a2 {
+    0%{
+        transform: translate(-220%);
+    }
+    
+    100% {
+        transform: translateX(400%);
+    }
+    
+}
+</style>
+<body>
+    <div>
+        <div class="a1"></div>
+        <div class="a2"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+body{
+    background-image: url(./sahara\ desert.jpg);
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.nav{
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.camel{
+    width: 50px;
+    cursor: pointer;
+}
+.menu{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+}
+.main{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 70px;
+}
+.child{
+    flex-basis: 50%;
+}
+.card{
+    width: 310px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    transition-property: transform 0.5;
+    
+}
+.c1{
+    background-image: url(./pic-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.c2{
+    background-image: url(./pic-3.png);
+    background-position: center;
+    background-size: cover;
+}
+.c3{
+    background-image: url(./pic-4.png);
+    background-position: center;
+    background-size: cover;
+}
+.c4{
+    background-image: url(./S11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div p{
+    color:white;
+    line-height: 20px;
+}
+.bot{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 160px;
+    height: 30px;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+/* media query */
+@media screen and (min-width:360px) and (max-width:900px) {
+    .main{
+        display: block;
+    }
+    .nav{
+        text-align: left;
+    }
+    .card{
+        width: 615px;
+    }
+}
